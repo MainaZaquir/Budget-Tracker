@@ -2,7 +2,7 @@ import unittest
 import argparse
 from unittest.mock import patch
 from io import StringIO
-from budget_tracker.cli.main import parse_args, add_transaction_command, balance_command
+from budget_tracker.cli.cli import parse_args, add_transaction_command, balance_command
 
 class TestCLI(unittest.TestCase):
     def test_parse_args_add_transaction(self):

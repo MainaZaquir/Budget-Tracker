@@ -2,6 +2,8 @@ from sqlalchemy import create_engine, Column, Integer, String, DateTime
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.sql import func
+from budget_tracker.model import Session
+
 
 Base = declarative_base()
 
