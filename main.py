@@ -1,5 +1,5 @@
 from budget_tracker.tracker import add_transaction, get_balance
-from budget_tracker.cli.cli import interactive_mode, parse_args, add_transaction_command, balance_command
+from cli import interactive_mode, parse_args, add_transaction_command, balance_command
 
 def main():
     args = parse_args()

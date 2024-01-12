@@ -1,5 +1,6 @@
 from budget_tracker.database import Session, Transaction
 from sqlalchemy import func
+from budget_tracker.database import Session, Transaction
 
 def add_transaction(amount, transaction_type, description=None):
     session = Session()
