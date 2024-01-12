@@ -12,9 +12,8 @@ class Transaction(Base):
     amount = Column(Float, nullable=False)
     type = Column(String(10), nullable=False)
     description = Column(String(255))
-    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)  # Add this line
 
-# Add more models as needed
 
 # Creating a SQLite database engine
 DATABASE_URL = "sqlite:///budget_tracker.db"
